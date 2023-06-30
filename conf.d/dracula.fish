@@ -4,7 +4,7 @@ function _dracula_themes_supported
 end
 
 function _dracula_self_destruct
-    rm (status --current-filename)
+    rm -f (status --current-filename)
 end
 
 function _dracula_install --on-event dracula_install
